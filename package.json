@@ -11,8 +11,12 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^1.2.5",
+    "astro": "^1.2.6",
     "autoprefixer": "^10.4.11",
     "cssnano": "^5.1.13"
+  },
+  "devDependencies": {
+    "postcss": "^8.2.15",
+    "sass": "^1.54.9"
   }
 }
