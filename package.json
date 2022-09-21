@@ -13,7 +13,8 @@
   "dependencies": {
     "astro": "^1.2.6",
     "autoprefixer": "^10.4.11",
-    "cssnano": "^5.1.13"
+    "cssnano": "^5.1.13",
+    "swiper": "^8.4.2"
   },
   "devDependencies": {
     "postcss": "^8.2.15",

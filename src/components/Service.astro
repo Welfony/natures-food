@@ -1,0 +1,120 @@
+---
+import "swiper/css";
+---
+
+<section id="services" class="services">
+  <div class="container">
+    <div class="section-title">
+      <h2>Our Services</h2>
+      <p>
+        To provide end-to-end solution for our clients makes us your one-stop
+        quality pet food manufacturer.
+      </p>
+    </div>
+
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide row">
+          <div class="col-sm-12 col-md-6 d-flex mb-5 mb-lg-0">
+            <div class="icon-box">
+              <h4 class="title"><a href="">Packaging</a></h4>
+              <p class="description">
+                We have the capability to pack products in almost any form. We
+                have close relationships with many major packaging material
+                manufacturers and suppliers worldwide. This extensive packing
+                supplier net work allows us to meet clients' specific needs for
+                new and existing products. Packaging options include steel and
+                paper cans, sachets and bags.
+              </p>
+              <div>
+                <a href="#" class="btn-view">View More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-6 d-flex flex-column mb-5 mb-lg-0">
+            <img src="services/service-packaging.png" class="img-intro" />
+          </div>
+        </div>
+        <div class="swiper-slide row">
+          <div class="col-sm-12 col-md-6 d-flex mb-5 mb-lg-0">
+            <div class="icon-box">
+              <h4 class="title"><a href="">Manufacturing</a></h4>
+              <p class="description">
+                We have a full range of machinery and technologies to provide a
+                comprehensive spectrum of custom manufacturing solutions
+                tailored to our clients’ needs. We are dedicated to providing
+                you with flexible, responsible and customer-centred solutions
+                from development to distribution.
+              </p>
+              <div>
+                <a href="#" class="btn-view">View More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-6 d-flex flex-column mb-5 mb-lg-0">
+            <img src="services/service-manufacturing.png" class="img-intro" />
+          </div>
+        </div>
+        <div class="swiper-slide row">
+          <div class="col-sm-12 col-md-6 d-flex mb-5 mb-lg-0">
+            <div class="icon-box">
+              <h4 class="title"><a href="">Product Formulation</a></h4>
+              <p class="description">
+                We cooperate with top animal nutrition laboratories around the
+                world. Highly qualified and experienced teams are not only
+                familiar with the latest technical issues but they also have a
+                deep understanding of market trends. We are able to support
+                clients in all stages of the R&D process including formulations,
+                specifications, testing methods and stability testing reports.
+              </p>
+              <div>
+                <a href="#" class="btn-view">View More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-6 d-flex flex-column mb-5 mb-lg-0">
+            <img
+              src="services/service-product-formulation.png"
+              class="img-intro"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="d-flex service-pagination">
+        <div class="swiper-buttons">
+          <div class="swiper-button-prev">
+            <img src="icons/swiper-page-left.svg" />
+          </div>
+          <div class="swiper-button-next">
+            <img src="icons/swiper-page-right.svg" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  import Swiper, { Navigation, Pagination } from "swiper";
+
+  (function () {
+    new Swiper(".swiper", {
+      modules: [Navigation, Pagination],
+      spaceBetween: 0,
+      loop: false,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  })();
+</script>
