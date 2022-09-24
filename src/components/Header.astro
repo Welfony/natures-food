@@ -1,14 +1,14 @@
 <header id="header" class="d-flex align-items-center">
   <div class="container d-flex align-items-center justify-content-between">
     <div class="logo">
-      <a href="index.html"
-        ><img src="brand/top-logo.png" alt="" class="img-fluid" />
+      <a href="index.html">
+        <img src="brand/top-logo.png" alt="" class="img-fluid" />
       </a>
     </div>
 
     <nav id="navbar" class="navbar">
       <ul>
-        <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+        <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
         <li class="dropdown">
           <a href="#services"
             ><span>Service</span> <i class="bi bi-chevron-down"></i>
@@ -25,4 +25,52 @@
       <i class="bi bi-list mobile-nav-toggle"></i>
     </nav>
   </div>
+  <div class="overlay d-flex d-lg-none"></div>
+  <div class="order-lg-2 d-lg-flex w-100 sidebar pb-3 pb-lg-0">
+    <div class="offcanvas-header px-4 pb-0">
+      <h5 class="offcanvas-title">Nature's Food</h5>
+      <button
+        type="button"
+        class="btn-close btn-close-white"
+        data-bs-dismiss="offcanvas"
+        aria-label="Close"></button>
+    </div>
+    <ul class="navbar-nav mr-lg-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+        <a class="nav-link px-3 px-lg-2" href="index.html"> Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link px-3 px-lg-2" href="#">Packaging</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link px-3 px-lg-2" href="#">Manufacturing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link px-3 px-lg-2" href="#">Product Formulation</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link px-3 px-lg-2" href="#about">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link px-3 px-lg-2" href="#contact">Contact Us</a>
+      </li>
+    </ul>
+  </div>
 </header>
+
+<script>
+  const mainNavigation = document.querySelector("#header");
+  const overlay = mainNavigation!.querySelector(".overlay");
+  const toggler = mainNavigation!.querySelector(".mobile-nav-toggle");
+  const sidebar = mainNavigation!.querySelector(".sidebar");
+  const links = sidebar!.querySelectorAll("a");
+
+  const openSideNav = () => mainNavigation!.classList.add("active");
+  const closeSideNav = () => mainNavigation!.classList.remove("active");
+
+  toggler!.addEventListener("click", openSideNav);
+  overlay!.addEventListener("click", closeSideNav);
+  links.forEach((el) => {
+    el.addEventListener("click", closeSideNav);
+  });
+</script>
