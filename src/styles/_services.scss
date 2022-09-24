@@ -86,6 +86,7 @@
 
 .swiper-pagination-bullet {
   display: block;
+  cursor: pointer;
   float: left;
   margin: 6px 32px 6px 0;
   background-color: #bec2ce;
@@ -102,10 +103,23 @@
 }
 .swiper-button-prev,
 .swiper-button-next {
+  cursor: pointer;
   float: left;
   margin-right: 32px;
 
-  img {
+  svg {
     width: 24px;
+
+    g {
+      fill: #000;
+    }
+  }
+
+  &.swiper-button-disabled {
+    svg {
+      g {
+        fill: #bec2ce;
+      }
+    }
   }
 }
