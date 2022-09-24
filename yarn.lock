@@ -20,16 +20,16 @@
   resolved "https://registry.npmmirror.com/@astrojs/compiler/-/compiler-0.24.0.tgz#aeded097eb325dfdcead9079c2eeb4371289437f"
   integrity sha512-xZ81C/oMfExdF18I1Tyd2BKKzBqO+qYYctSy4iCwH4UWSo/4Y8A8MAzV1hG67uuE7hFRourSl6H5KUbhyChv/A==
 
-"@astrojs/language-server@^0.23.0":
-  version "0.23.3"
-  resolved "https://registry.npmmirror.com/@astrojs/language-server/-/language-server-0.23.3.tgz#6133bccc22c27b356ef51a558a2be108f1dc51ff"
-  integrity sha512-ROoMKo37NZ76pE/A2xHfjDlgfsNnFmkhL4+Wifs0L855n73SUCbnXz7ZaQktIGAq2Te2TpSjAawiOx0q9L5qeg==
+"@astrojs/language-server@^0.26.2":
+  version "0.26.2"
+  resolved "https://registry.npmmirror.com/@astrojs/language-server/-/language-server-0.26.2.tgz#0e685f2e1d76d06f682d9d0f93a9b35f0b5c23d8"
+  integrity sha512-9nkfdd6CMXLDIJojnwbYu5XrYfOI+g63JlktOlpFCwFjFNpm1u0e/+pXXmj6Zs+PkSTo0kV1UM77dRKRS5OC1Q==
   dependencies:
     "@vscode/emmet-helper" "^2.8.4"
+    events "^3.3.0"
     prettier "^2.7.1"
     prettier-plugin-astro "^0.5.3"
     source-map "^0.7.3"
-    typescript "~4.6.4"
     vscode-css-languageservice "^6.0.1"
     vscode-html-languageservice "^5.0.0"
     vscode-languageserver "^8.0.1"
@@ -38,16 +38,17 @@
     vscode-languageserver-types "^3.17.1"
     vscode-uri "^3.0.3"
 
-"@astrojs/markdown-remark@^1.1.1":
-  version "1.1.1"
-  resolved "https://registry.npmmirror.com/@astrojs/markdown-remark/-/markdown-remark-1.1.1.tgz#8d07db28ab15a17f54fd2e260052216731932683"
-  integrity sha512-eOvrqejecgeRLUXOdBfb0VoMppe7J80TlazaDnu4tVDdTG4nyuspO0CTPr9nzt6rbW5iLIh4KEUUuOk+z8n8uQ==
+"@astrojs/markdown-remark@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.npmmirror.com/@astrojs/markdown-remark/-/markdown-remark-1.1.2.tgz#9d6801ce395ab340fb42d07de100a65ce21ab03d"
+  integrity sha512-afZWKRX7HFq1DdXq1jsUiqYee67Ln0Qan0yNgjNP2Nht0dxYD6JAK40+uiptKiRmP73cQjAVLGh54sgrruBDwA==
   dependencies:
     "@astrojs/micromark-extension-mdx-jsx" "^1.0.3"
     "@astrojs/prism" "^1.0.0"
     acorn "^8.7.1"
     acorn-jsx "^5.3.2"
     github-slugger "^1.4.0"
+    hast-util-to-html "^8.0.3"
     mdast-util-mdx-expression "^1.2.1"
     mdast-util-mdx-jsx "^1.2.0"
     micromark-extension-mdx-expression "^1.0.3"
@@ -661,14 +662,14 @@ ast-types@0.14.2:
   dependencies:
     tslib "^2.0.1"
 
-astro@^1.2.6:
-  version "1.2.6"
-  resolved "https://registry.npmmirror.com/astro/-/astro-1.2.6.tgz#900c686e382699d934cb526dcb5920e510083d76"
-  integrity sha512-u6s5EH6+F/IpNkjJJ2RAKMWmBIOVz4AozjyW7aD0hsiGkVF0VYu7AqNWO3TTG6WQ6c9YbosDpfj+JKTT+S/JhA==
+astro@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.npmmirror.com/astro/-/astro-1.3.0.tgz#bbe8ccf17b64bb41abf5d102dd1533908a18075c"
+  integrity sha512-cWBtLkkUcj38J0knrTaZvyoVFJxjOAWPRbECIXFxvGZ/ASNr+FNumeUk/u3uAGIF0pbqEgc+5zAvmPoe0pCd9w==
   dependencies:
     "@astrojs/compiler" "^0.24.0"
-    "@astrojs/language-server" "^0.23.0"
-    "@astrojs/markdown-remark" "^1.1.1"
+    "@astrojs/language-server" "^0.26.2"
+    "@astrojs/markdown-remark" "^1.1.2"
     "@astrojs/telemetry" "^1.0.0"
     "@astrojs/webapi" "^1.0.0"
     "@babel/core" "^7.18.2"
@@ -718,19 +719,20 @@ astro@^1.2.6:
     strip-ansi "^7.0.1"
     supports-esm "^1.0.0"
     tsconfig-resolver "^3.0.1"
+    typescript "*"
     unist-util-visit "^4.1.0"
     vfile "^5.3.2"
-    vite "3.1.0"
+    vite "~3.1.3"
     yargs-parser "^21.0.1"
     zod "^3.17.3"
 
-autoprefixer@^10.4.11:
-  version "10.4.11"
-  resolved "https://registry.npmmirror.com/autoprefixer/-/autoprefixer-10.4.11.tgz#835136aff1d9cd43640151e0d2dba00f8eac7c1c"
-  integrity sha512-5lHp6DgRodxlBLSkzHOTcufWFflH1ewfy2hvFQyjrblBFlP/0Yh4O/Wrg4ow8WRlN3AAUFFLAQwX8hTptzqVHg==
+autoprefixer@^10.4.12:
+  version "10.4.12"
+  resolved "https://registry.npmmirror.com/autoprefixer/-/autoprefixer-10.4.12.tgz#183f30bf0b0722af54ee5ef257f7d4320bb33129"
+  integrity sha512-WrCGV9/b97Pa+jtwf5UGaRjgQIg7OK3D06GnoYoZNcG1Xb8Gt3EfuKjlhh9i/VtT16g6PYjZ69jdJ2g8FxSC4Q==
   dependencies:
-    browserslist "^4.21.3"
-    caniuse-lite "^1.0.30001399"
+    browserslist "^4.21.4"
+    caniuse-lite "^1.0.30001407"
     fraction.js "^4.2.0"
     normalize-range "^0.1.2"
     picocolors "^1.0.0"
@@ -786,7 +788,7 @@ braces@^3.0.2, braces@~3.0.2:
   dependencies:
     fill-range "^7.0.1"
 
-browserslist@^4.0.0, browserslist@^4.16.6, browserslist@^4.20.3, browserslist@^4.21.3:
+browserslist@^4.0.0, browserslist@^4.16.6, browserslist@^4.20.3, browserslist@^4.21.3, browserslist@^4.21.4:
   version "4.21.4"
   resolved "https://registry.npmmirror.com/browserslist/-/browserslist-4.21.4.tgz#e7496bbc67b9e39dd0f98565feccdcb0d4ff6987"
   integrity sha512-CBHJJdDmgjl3daYjN5Cp5kbTf1mUhZoS+beLklHIvkOWscs83YAhLlF3Wsh/lciQYAcbBJgTOD44VtG31ZM4Hw==
@@ -819,10 +821,15 @@ caniuse-api@^3.0.0:
     lodash.memoize "^4.1.2"
     lodash.uniq "^4.5.0"
 
-caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001399, caniuse-lite@^1.0.30001400:
+caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001400:
   version "1.0.30001400"
   resolved "https://registry.npmmirror.com/caniuse-lite/-/caniuse-lite-1.0.30001400.tgz#3038bee70d8b875604cd8833cb0e5e254ee0281a"
   integrity sha512-Mv659Hn65Z4LgZdJ7ge5JTVbE3rqbJaaXgW5LEI9/tOaXclfIZ8DW7D7FCWWWmWiiPS7AC48S8kf3DApSxQdgA==
+
+caniuse-lite@^1.0.30001407:
+  version "1.0.30001410"
+  resolved "https://registry.npmmirror.com/caniuse-lite/-/caniuse-lite-1.0.30001410.tgz#b5a86366fbbf439d75dd3db1d21137a73e829f44"
+  integrity sha512-QoblBnuE+rG0lc3Ur9ltP5q47lbguipa/ncNMyyGuqPk44FxbScWAeEO+k5fSQ8WekdAK4mWqNs1rADDAiN5xQ==
 
 ccount@^2.0.0:
   version "2.0.1"
@@ -1486,6 +1493,11 @@ estree-util-visit@^1.0.0:
     "@types/estree-jsx" "^1.0.0"
     "@types/unist" "^2.0.0"
 
+events@^3.3.0:
+  version "3.3.0"
+  resolved "https://registry.npmmirror.com/events/-/events-3.3.0.tgz#31a95ad0a924e2d2c419a813aeb2c4e878ea7400"
+  integrity sha512-mQw+2fkQbALzQ7V0MY0IqdnXNOeTtP4r0lN9z7AAawCXgqea7bDii20AYrIBrFd/Hx0M2Ocz6S111CaFkUcb0Q==
+
 execa@^6.1.0:
   version "6.1.0"
   resolved "https://registry.npmmirror.com/execa/-/execa-6.1.0.tgz#cea16dee211ff011246556388effa0818394fb20"
@@ -1727,7 +1739,7 @@ hast-util-raw@^7.2.0:
     web-namespaces "^2.0.0"
     zwitch "^2.0.0"
 
-hast-util-to-html@^8.0.0:
+hast-util-to-html@^8.0.0, hast-util-to-html@^8.0.3:
   version "8.0.3"
   resolved "https://registry.npmmirror.com/hast-util-to-html/-/hast-util-to-html-8.0.3.tgz#4e37580872e143ea9ce0dba87918b19e4ea997e3"
   integrity sha512-/D/E5ymdPYhHpPkuTHOUkSatxr4w1ZKrZsG0Zv/3C2SRVT0JFJG53VS45AMrBtYk0wp5A7ksEhiC8QaOZM95+A==
@@ -3272,10 +3284,10 @@ sass-formatter@^0.7.5:
   dependencies:
     suf-log "^2.5.3"
 
-sass@^1.54.9:
-  version "1.54.9"
-  resolved "https://registry.npmmirror.com/sass/-/sass-1.54.9.tgz#b05f14ed572869218d1a76961de60cd647221762"
-  integrity sha512-xb1hjASzEH+0L0WI9oFjqhRi51t/gagWnxLiwUNMltA0Ab6jIDkAacgKiGYKM9Jhy109osM7woEEai6SXeJo5Q==
+sass@^1.55.0:
+  version "1.55.0"
+  resolved "https://registry.npmmirror.com/sass/-/sass-1.55.0.tgz#0c4d3c293cfe8f8a2e8d3b666e1cf1bff8065d1c"
+  integrity sha512-Pk+PMy7OGLs9WaxZGJMn7S96dvlyVBwwtToX895WmCpAOr5YiJYEUJfiJidMuKb613z2xNWcXCHEuOvjZbqC6A==
   dependencies:
     chokidar ">=3.0.0 <4.0.0"
     immutable "^4.0.0"
@@ -3599,10 +3611,10 @@ type-fest@^2.5.0:
   resolved "https://registry.npmmirror.com/type-fest/-/type-fest-2.19.0.tgz#88068015bb33036a598b952e55e9311a60fd3a9b"
   integrity sha512-RAH822pAdBgcNMAfWnCBU3CFZcfZ/i1eZjwFU/dsLKumyuuP3niueg2UAukXYF0E2AAoc82ZSSf9J0WQBinzHA==
 
-typescript@~4.6.4:
-  version "4.6.4"
-  resolved "https://registry.npmmirror.com/typescript/-/typescript-4.6.4.tgz#caa78bbc3a59e6a5c510d35703f6a09877ce45e9"
-  integrity sha512-9ia/jWHIEbo49HfjrLGfKbZSuWo9iTMwXO+Ca3pRsSpbsMbc7/IU8NKdCZVRRBafVPGnoJeFL76ZOAA84I9fEg==
+typescript@*:
+  version "4.8.3"
+  resolved "https://registry.npmmirror.com/typescript/-/typescript-4.8.3.tgz#d59344522c4bc464a65a730ac695007fdb66dd88"
+  integrity sha512-goMHfm00nWPa8UvR/CPSvykqf6dVV8x/dp0c5mFTMTIu0u0FlGWRioyy7Nn0PGAdHxpJZnuO/ut+PpQ8UiHAig==
 
 unherit@^3.0.0:
   version "3.0.0"
@@ -3753,10 +3765,10 @@ vfile@^5.0.0, vfile@^5.3.2:
     unist-util-stringify-position "^3.0.0"
     vfile-message "^3.0.0"
 
-vite@3.1.0:
-  version "3.1.0"
-  resolved "https://registry.npmmirror.com/vite/-/vite-3.1.0.tgz#3138b279072941d57e76bcf7f66f272fc6a17fe2"
-  integrity sha512-YBg3dUicDpDWFCGttmvMbVyS9ydjntwEjwXRj2KBFwSB8SxmGcudo1yb8FW5+M/G86aS8x828ujnzUVdsLjs9g==
+vite@~3.1.3:
+  version "3.1.3"
+  resolved "https://registry.npmmirror.com/vite/-/vite-3.1.3.tgz#b2a0821c11aae124bb7618f8036913c689afcc59"
+  integrity sha512-/3XWiktaopByM5bd8dqvHxRt5EEgRikevnnrpND0gRfNkrMrPaGGexhtLCzv15RcCMtV2CLw+BPas8YFeSG0KA==
   dependencies:
     esbuild "^0.15.6"
     postcss "^8.4.16"
