@@ -234,25 +234,14 @@
   visibility: visible;
 }
 
-@media (min-width: 992px) {
-  .sidebar {
-    position: relative;
-    top: auto;
-    bottom: auto;
-    left: auto;
-    flex-direction: row;
-    max-width: 100%;
-    transform: none;
-    transition: none;
-    overflow-y: visible;
-    z-index: auto;
-  }
-}
-
 .offcanvas-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 16px 24px;
   color: $primary;
+}
+
+.offcanvas-separator {
+  border-top: 1px solid #566982;
 }
