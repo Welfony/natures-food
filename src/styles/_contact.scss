@@ -38,7 +38,7 @@
 
     strong {
       display: block;
-      margin-top: 40px;
+      margin-top: 34px;
     }
 
     .phone {
@@ -154,7 +154,6 @@
   padding: 16px 32px;
   transition: 0.5s;
   line-height: 1;
-  margin: 10px 0;
   color: #fff;
   animation-delay: 0.8s;
   text-decoration: none;
@@ -163,6 +162,12 @@
   &:hover {
     background-color: transparent;
     color: $primary;
+  }
+}
+
+@media (max-width: 1199px) {
+  .contact .form-wrapper .contact-panel {
+    padding: 20px;
   }
 }
 
