@@ -37,10 +37,23 @@
   line-height: 24px;
   margin-bottom: 0;
   color: #a3b0c1;
+
+  a {
+    color: #a3b0c1;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 #footer .footer-top .footer-logo {
   text-align: center;
+
+  img {
+    width: 100%;
+  }
 }
 
 #footer .copyright {

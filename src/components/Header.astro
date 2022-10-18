@@ -1,26 +1,63 @@
 <header id="header" class="d-flex align-items-center">
   <div class="container d-flex align-items-center justify-content-between">
     <div class="logo">
-      <a href="index.html">
-        <img src="brand/top-logo.png" alt="" class="img-fluid" />
+      <a href={import.meta.env.BASE_URL}>
+        <img
+          src={`${import.meta.env.BASE_URL}brand/top-logo.png`}
+          alt=""
+          class="img-fluid"
+        />
       </a>
     </div>
 
     <nav id="navbar" class="navbar">
       <ul>
-        <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+        <li>
+          <a class="nav-link scrollto active" href={import.meta.env.BASE_URL}>
+            Home
+          </a>
+        </li>
         <li class="dropdown">
-          <a href="#services"
-            ><span>Service</span> <i class="bi bi-chevron-down"></i>
+          <a href="#services">
+            <span>Service</span>
+            <i class="bi bi-chevron-down"></i>
           </a>
           <ul>
-            <li><a href="#">Packaging</a></li>
-            <li><a href="#">Manufacturing</a></li>
-            <li><a href="#">Product Formulation</a></li>
+            <li>
+              <a href={`${import.meta.env.BASE_URL}services/packaging`}>
+                Packaging
+              </a>
+            </li>
+            <li>
+              <a href={`${import.meta.env.BASE_URL}services/manufacturing`}>
+                Manufacturing
+              </a>
+            </li>
+            <li>
+              <a
+                href={`${import.meta.env.BASE_URL}services/product-formulation`}
+              >
+                Product Formulation
+              </a>
+            </li>
           </ul>
         </li>
-        <li><a class="nav-link scrollto" href="#about">About Us</a></li>
-        <li><a class="nav-link scrollto" href="#contact">Contact Us</a></li>
+        <li>
+          <a
+            class="nav-link scrollto"
+            href={`${import.meta.env.BASE_URL}about`}
+          >
+            About Us
+          </a>
+        </li>
+        <li>
+          <a
+            class="nav-link scrollto"
+            href={`${import.meta.env.BASE_URL}contact`}
+          >
+            Contact Us
+          </a>
+        </li>
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>
     </nav>
@@ -38,22 +75,49 @@
     <hr class="d-lg-none offcanvas-separator" />
     <ul class="navbar-nav mr-lg-auto mb-2 mb-lg-0">
       <li class="nav-item">
-        <a class="nav-link px-3 px-lg-2" href="index.html"> Home</a>
+        <a class="nav-link px-3 px-lg-2" href={import.meta.env.BASE_URL}>
+          Home
+        </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link px-3 px-lg-2" href="#">Packaging</a>
+        <a
+          class="nav-link px-3 px-lg-2"
+          href={`${import.meta.env.BASE_URL}services/packaging`}
+        >
+          Packaging
+        </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link px-3 px-lg-2" href="#">Manufacturing</a>
+        <a
+          class="nav-link px-3 px-lg-2"
+          href={`${import.meta.env.BASE_URL}services/manufacturing`}
+        >
+          Manufacturing
+        </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link px-3 px-lg-2" href="#">Product Formulation</a>
+        <a
+          class="nav-link px-3 px-lg-2"
+          href={`${import.meta.env.BASE_URL}services/product-formulation`}
+        >
+          Product Formulation
+        </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link px-3 px-lg-2" href="#about">About Us</a>
+        <a
+          class="nav-link px-3 px-lg-2"
+          href={`${import.meta.env.BASE_URL}about`}
+        >
+          About Us
+        </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link px-3 px-lg-2" href="#contact">Contact Us</a>
+        <a
+          class="nav-link px-3 px-lg-2"
+          href={`${import.meta.env.BASE_URL}contact`}
+        >
+          Contact Us
+        </a>
       </li>
     </ul>
   </div>

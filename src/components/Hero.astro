@@ -27,12 +27,21 @@ import Header from "../components/Header.astro";
             experience and technology, we will ensure you are in the best
             position to launch your new pet product!
           </p>
-          <a href="#" class="btn-contact">Contact Us</a>
-          <a href="#" class="btn-about">About Us</a>
+          <a href={`${import.meta.env.BASE_URL}contact`} class="btn-contact">
+            Contact Us
+          </a>
+          <a href={`${import.meta.env.BASE_URL}about`} class="btn-about">
+            About Us
+          </a>
         </div>
       </div>
       <div class="hero-bottom-arrow">
-        <a href="#services"><img src="icons/banner-arrow.png" alt="Click here to learn more about us" /></a>
+        <a href="#services">
+          <img
+            src={`${import.meta.env.BASE_URL}icons/banner-arrow.png`}
+            alt="Click here to learn more about us"
+          />
+        </a>
       </div>
     </div>
   </div>

@@ -2,30 +2,40 @@
   <div class="footer-top">
     <div class="container">
       <div class="row">
-        <div class="col-lg-4 col-md-6 footer-info">
+        <div class="col-lg-5 col-md-6 footer-info">
           <h3>Nature's Foods Australia</h3>
           <p>
             We provide end-to-end solutions for our clients making us your
-            one-stop quality pet food manufacturer. Nature's Foods Australia
-            primarily manufactures freeze dried pet food. However, our services
-            also includes powder mixing services, packaging design, packaging
-            sourcing, and packing.
+            one-stop quality pet food manufacturer.
           </p>
         </div>
 
-        <div class="col-lg-4 col-md-6 footer-info">
+        <div class="col-lg-3 col-md-6 footer-info">
           <h3>Our Service</h3>
-          <p>Freeze dried pet food manufacturing</p>
-          <p>Powder mixing services (powdered milk and supplements)</p>
-          <p>Product formulation</p>
-          <p>Off the shelf formulas/White labelled</p>
-          <p>Packaging and label design</p>
-          <p>Packaging Sourcing</p>
-          <p>Packing (powder, treats)</p>
+          <p>
+            <a href={`${import.meta.env.BASE_URL}services/packaging`}>
+              Packaging
+            </a>
+          </p>
+          <p>
+            <a href={`${import.meta.env.BASE_URL}services/manufacturing`}>
+              Manufacturing
+            </a>
+          </p>
+          <p>
+            <a href={`${import.meta.env.BASE_URL}services/product-formulation`}>
+              Product Formulation
+            </a>
+          </p>
         </div>
 
         <div class="col-lg-4 col-md-6 footer-logo">
-          <img src="brand/social-image.png" alt="Nature's Foods" />
+          <a href={import.meta.env.BASE_URL}>
+            <img
+              src={`${import.meta.env.BASE_URL}brand/top-logo.png`}
+              alt="Nature's Foods"
+            />
+          </a>
         </div>
       </div>
     </div>
