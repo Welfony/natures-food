@@ -1,6 +1,18 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import HeroImage from "../../components/HeroImage.astro";
+
+const backgroundImage = `${
+  import.meta.env.BASE_URL
+}background/product-formulation-banner.jpg`;
+const description =
+  "We cooperate with top animal nutrition laboratories around the world. Highly qualified and experienced teams are not only familiar with the latest technical issues but they also have a deep understanding of market trends.";
 ---
 
 <Layout title="Product Formulation" description="">
+  <HeroImage
+    title="Product Formulation"
+    description={description}
+    background={backgroundImage}
+  />
 </Layout>

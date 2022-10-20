@@ -92,6 +92,10 @@
     bottom: 0;
     z-index: 10;
   }
+  
+  &.no-cover::before {
+    background-color: transparent;
+  }
 
   &-content {
     display: flex;

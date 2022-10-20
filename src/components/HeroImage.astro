@@ -1,0 +1,36 @@
+---
+import Header from "../components/Header.astro";
+
+export interface Props {
+  background: string;
+  title: string;
+  description: string;
+}
+
+const { background, title, description } = Astro.props;
+---
+
+<section id="hero">
+  <div class="hero-container">
+    <Header />
+    <div class="hero-item no-cover">
+      <img src={background} class="picture" />
+      <div class="hero-item-content">
+        <div>
+          <h2>{title}</h2>
+          <p>
+            {description}
+          </p>
+        </div>
+      </div>
+      <div class="hero-bottom-arrow">
+        <a href="#services">
+          <img
+            src={`${import.meta.env.BASE_URL}icons/banner-arrow.png`}
+            alt="Click here to learn more about us"
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

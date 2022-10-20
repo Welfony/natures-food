@@ -1,8 +1,18 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Header from "../components/Header.astro";
+import HeroImage from "../components/HeroImage.astro";
+
+const backgroundImage = `${
+  import.meta.env.BASE_URL
+}background/about-us-banner.jpg`;
+const description =
+  "Nature's Foods Australia primarily manufactures freeze dried pet food. However, our services also includes powder mixing services, packaging design, packaging sourcing, and packing. ";
 ---
 
 <Layout title="About Us" description="">
-  <Header />
+  <HeroImage
+    title="Nature's food australiapty ltd"
+    description={description}
+    background={backgroundImage}
+  />
 </Layout>

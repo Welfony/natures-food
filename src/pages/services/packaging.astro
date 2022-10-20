@@ -1,6 +1,18 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import HeroImage from "../../components/HeroImage.astro";
+
+const backgroundImage = `${
+  import.meta.env.BASE_URL
+}background/packaging-banner.jpg`;
+const description =
+  "Nature's Food Australia has the capacity to pack products in almost any form. We have close relationship with many major packaging material manufacturers and supplier worldwide.";
 ---
 
 <Layout title="Packaging" description="">
+  <HeroImage
+    title="Packaging"
+    description={description}
+    background={backgroundImage}
+  />
 </Layout>

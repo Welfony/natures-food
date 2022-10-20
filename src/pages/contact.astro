@@ -1,6 +1,18 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import HeroImage from "../components/HeroImage.astro";
+
+const backgroundImage = `${
+  import.meta.env.BASE_URL
+}background/contact-us-banner.jpg`;
+const description =
+  "Complete control over products allows us to ensure our customers receive the best quality prices and service. We take great pride in everything that we do in our factory.";
 ---
 
-<Layout title="Contact Us" description="">
+<Layout title="Contact Us" description={description}>
+  <HeroImage
+    title="Contact Us"
+    description={description}
+    background={backgroundImage}
+  />
 </Layout>

@@ -1,6 +1,18 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import HeroImage from "../../components/HeroImage.astro";
+
+const backgroundImage = `${
+  import.meta.env.BASE_URL
+}background/manufacturing-banner.jpg`;
+const description =
+  "Nature's Foods Australia can assist you every step of the way; from concept to production. We provide end-to-end solutions for our clients making us your one-stop quality pet food manufacturer.";
 ---
 
 <Layout title="Manufacturing" description="">
+  <HeroImage
+    title="Manufacturing"
+    description={description}
+    background={backgroundImage}
+  />
 </Layout>
