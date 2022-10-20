@@ -106,3 +106,48 @@
     color: #fff;
   }
 }
+
+.manufacturing {
+  h5 {
+    margin-top: 40px;
+    text-align: left;
+    font-weight: 700;
+    color: #2c3b4e;
+  }
+
+  .icon-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 9px 12px 0 rgba(22, 22, 25, 0.07);
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+    border-radius: 4px;
+    border: 1px solid #eaeaea;
+    height: 100%;
+    min-height: 200px;
+
+    &.with-inner {
+      padding: 0;
+    }
+
+    img {
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #2c3b4e;
+      font-size: 1em;
+    }
+  }
+
+  .icon-box.icon-inner {
+    box-shadow: none;
+    border: none;
+    min-height: auto;
+  }
+}

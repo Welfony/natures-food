@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="56px" viewBox="0 0 100 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title> freeze dry-paper can</title>
+    <g id="-freeze-dry-paper-can" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-9" transform="translate(22.000000, 2.000000)" stroke="#000000" stroke-width="2">
+            <ellipse id="Oval" cx="17.6861841" cy="27.1763317" rx="17.6861841" ry="4.96075896"></ellipse>
+            <ellipse id="Oval" cx="38.7154884" cy="3.23527759" rx="14.1273788" ry="3.23527759"></ellipse>
+            <ellipse id="Oval" cx="12.0282999" cy="26.6621537" rx="3.8823331" ry="1.50979621"></ellipse>
+            <path d="M0,27.1763317 L0,47.4498954 C2.43482196,50.7259058 8.33021667,52.2690046 17.6861841,52.0791918 C27.0421516,51.889379 32.9375463,50.2226634 35.3723683,47.079045 L35.3723683,27.1763317" id="Path-69"></path>
+            <line x1="52.8428672" y1="3.23527759" x2="52.8428672" y2="42.2514668" id="Path-70"></line>
+            <line x1="24.5881097" y1="3.23527759" x2="24.5881097" y2="22.7433722" id="Path-71"></line>
+            <path d="M24.5881097,11.4751416 C33.9055055,14.8653343 43.323758,14.9607399 52.8428672,11.7613583" id="Path-72"></path>
+            <path d="M35.3723683,36.5963395 C44.0907147,37.2123227 49.9142143,36.3213466 52.8428672,33.9234112" id="Path-73"></path>
+            <path d="M35.3723683,44.7699867 C42.7918557,45.6372406 48.6153554,44.797734 52.8428672,42.2514668" id="Path-74"></path>
+        </g>
+    </g>
+</svg>
