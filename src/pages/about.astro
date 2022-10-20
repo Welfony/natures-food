@@ -11,8 +11,89 @@ const description =
 
 <Layout title="About Us" description="">
   <HeroImage
-    title="Nature's food australiapty ltd"
+    title="About Us"
     description={description}
     background={backgroundImage}
   />
+  <section class="info-box py-0">
+    <div class="container-fluid">
+      <div class="row">
+        <div
+          class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch order-2 order-lg-1"
+        >
+          <div class="content">
+            <h3><strong> NATURE'S FOOD</strong> AUSTRALIAPTY LTD</h3>
+            <p>
+              Nature's Foods Australia primarily manufactures freeze dried pet
+              food. However, our services also includes powder mixing services,
+              packaging design, packaging sourcing, and packing.
+            </p>
+          </div>
+
+          <div class="accordion-list">
+            <ul>
+              <li>
+                <a data-bs-toggle="collapse" class="collapse">
+                  <span>01</span>
+                  Nature's Foods Australia primarily manufactures freeze dried pet
+                  food.
+                </a>
+                <div class="collapse show">
+                  <p>
+                    However, our services also includes powder mixing services,
+                    packaging design, packaging sourcing, and packing.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <a data-bs-toggle="collapse" class="collapse">
+                  <span>02</span>
+                  We help you that frome concept to production.
+                </a>
+                <div class="collapse show">
+                  <p>
+                    If you are interested in developing freeze died pet
+                    products, or powdered functional pet supplements our
+                    friendly team will be more than happy to assist you on this
+                    journey, from concept to production.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <a data-bs-toggle="collapse" class="collapse">
+                  <span>03</span>
+                  Our team has extensive expertise in the pet industry.
+                </a>
+                <div class="collapse show">
+                  <p>
+                    Launching several products locally and abroad. We are also
+                    equipped with the latest technology to ensure the highest
+                    quality products. With our experience and technology, we
+                    will ensure you are in the best position to launch your new
+                    pet product!
+                  </p>
+                  <p>
+                    Don't be shy! We pride ourselves in working with anyone from
+                    large multinational companies to new start-ups. We're happy
+                    to discuss your projects and offer honest feedback.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="col-lg-5 align-items-stretch order-1 order-lg-2 img"
+          style={`background-image: url(${
+            import.meta.env.BASE_URL
+          }info/info-box.jpg);`}
+        >
+          &nbsp;
+        </div>
+      </div>
+    </div>
+  </section>
 </Layout>

@@ -1,0 +1,131 @@
+// ====================================================
+//
+// This file is part of the Riching Cloud Platform.
+//
+// Create by Riching Cloud <support@richingcloud.com>
+// Copyright (c) 2020-2025 richingcloud.com
+//
+// ====================================================
+
+.info-box .content {
+  padding: 60px 100px 0 100px;
+}
+
+.info-box .content h3 {
+  font-weight: 400;
+  font-size: 34px;
+}
+
+.info-box .content h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+.info-box .content p {
+  font-size: 15px;
+  color: #6b8a86;
+}
+
+.info-box .img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 400px;
+}
+
+.info-box .accordion-list {
+  padding: 0 100px 60px 100px;
+}
+
+.info-box .accordion-list ul {
+  padding: 0;
+  list-style: none;
+}
+
+.info-box .accordion-list li+li {
+  margin-top: 15px;
+}
+
+.info-box .accordion-list li {
+  padding: 20px;
+  background: #f2f5f4;
+  border-radius: 5px;
+}
+
+.info-box .accordion-list a {
+  display: block;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  padding-right: 30px;
+  outline: none;
+  transition: ease-in-out 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+  color: #333;
+}
+
+.info-box .accordion-list a:hover {
+  color: #1bbca3;
+}
+
+.info-box .accordion-list span {
+  color: $primary;
+  font-weight: 600;
+  font-size: 18px;
+  padding-right: 10px;
+}
+
+.info-box .accordion-list i {
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.info-box .accordion-list p {
+  margin-bottom: 0;
+  padding: 10px 0 0 0;
+}
+
+.info-box .accordion-list .icon-show {
+  display: none;
+}
+
+.info-box .accordion-list a.collapsed {
+  color: #343a40;
+}
+
+.info-box .accordion-list a.collapsed:hover {
+  color: #1bbca3;
+}
+
+.info-box .accordion-list a.collapsed .icon-show {
+  display: inline-block;
+}
+
+.info-box .accordion-list a.collapsed .icon-close {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+
+  .info-box .content,
+  .info-box .accordion-list {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .info-box .content {
+    padding-top: 30px;
+  }
+
+  .info-box .accordion-list {
+    padding-bottom: 30px;
+  }
+}
