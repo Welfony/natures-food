@@ -1,0 +1,108 @@
+// ====================================================
+//
+// This file is part of the Riching Cloud Platform.
+//
+// Create by Riching Cloud <support@richingcloud.com>
+// Copyright (c) 2020-2025 richingcloud.com
+//
+// ====================================================
+
+.services .icon-box {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+  text-align: center;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.services .icon-box::before {
+  content: "";
+  position: absolute;
+  background: $primary;
+  right: -60px;
+  top: -40px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  transition: all 0.3s;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+.services .icon-box:hover::before {
+  background: $primary;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  border-radius: 0px;
+}
+
+.services .icon {
+  margin: 0 auto 20px auto;
+  padding-top: 10px;
+  display: inline-block;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.services .icon svg {
+  background-color: transparent;
+
+  g g {
+    stroke: #000;
+  }
+}
+
+.services .icon-box:hover svg {
+  g g {
+    stroke: #fff;
+  }
+}
+
+.services .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.services .title a {
+  text-decoration: none;
+  color: #425451;
+}
+
+.services .description {
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 0;
+
+  .btn-more {
+    border: 2px solid $primary;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 20px;
+    transition: 0.5s;
+    line-height: 1;
+    margin: 10px;
+    color: $primary;
+    animation-delay: 0.8s;
+    text-decoration: none;
+  }
+}
+
+.services .icon-box:hover .title a,
+.services .icon-box:hover .description {
+  color: #fff;
+
+  .btn-more {
+    border-color: #fff;
+    color: #fff;
+  }
+}
