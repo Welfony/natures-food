@@ -5,14 +5,15 @@ export interface Props {
   background: string;
   title: string;
   description: string;
+  active: string;
 }
 
-const { background, title, description } = Astro.props;
+const { background, title, description, active } = Astro.props;
 ---
 
 <section id="hero">
   <div class="hero-container">
-    <Header />
+    <Header active={active} />
     <div class="hero-item no-cover">
       <img src={background} class="picture" />
       <div class="hero-item-content">
