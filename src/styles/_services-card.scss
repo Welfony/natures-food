@@ -150,3 +150,49 @@
     min-height: auto;
   }
 }
+
+.packaging {
+  .background {
+    margin-top: 60px;
+    background: url(../background/packaging-background.jpg) fixed 50%;
+    background-size: cover;
+    padding: 0 30px 60px 30px;
+    position: relative;
+  }
+
+  .icon {
+    background-color: $primary;
+    border-radius: 16px;
+    padding: 30px;
+    margin-top: -30px;
+
+    img {
+      width: 100%;
+    }
+
+    strong {
+      display: block;
+      color: #fff;
+      text-align: center;
+    }
+  }
+}
+
+.product-formulation {
+  .icon {
+    border-radius: 16px;
+    padding: 30px;
+    margin-top: -30px;
+
+    img {
+      width: 100%;
+    }
+
+    strong {
+      display: block;
+      color: #2c3b4e;
+      margin-top: 20px;
+      text-align: center;
+    }
+  }
+}

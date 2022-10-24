@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="240px" height="240px" viewBox="0 0 240 240" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Formulations</title>
+    <g id="Formulations" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-10" transform="translate(3.000000, 2.000000)">
+            <g id="Group-2" transform="translate(26.567686, 41.895197)">
+                <polygon id="Path-142" stroke="#000000" stroke-width="2" points="28.8984471 62.3318777 0 46.1459739 0 15.4966835 28.8984471 0 57.2227074 15.4966835 57.2227074 46.1459739"></polygon>
+                <polyline id="Path-143" stroke="#000000" stroke-width="2" points="57.8767488 45.9825328 84.8122271 62.1191701 84.8122271 93.4792073 57.8767488 109.336245 29.6331878 93.4792073 29.6331878 62.1191701"></polyline>
+                <polyline id="Path-146" stroke="#000000" stroke-width="2" points="85.3051062 95.0305677 114.445415 110.928372 114.445415 143.063852 85.3051062 158.384279 57.2227074 143.063852 57.2227074 110.928372"></polyline>
+                <polyline id="Path-147" stroke="#000000" stroke-width="2" points="84.8122271 62.3318777 111.379913 46.3494586 111.379913 26.5676856"></polyline>
+                <polyline id="Path-148" stroke="#000000" stroke-width="2" points="112.401747 109.336245 139.991266 93.01045 139.991266 74.5938865"></polyline>
+                <polyline id="Path-149" stroke="#000000" stroke-width="2" points="141.0131 95.0305677 168.60262 110.928894 168.60262 147.144105"></polyline>
+                <line x1="155.318777" y1="117.510917" x2="155.318777" y2="144.078603" id="Path-150" stroke="#000000" stroke-width="2"></line>
+                <line x1="82.768559" y1="109.336245" x2="99.1179039" y2="119.554585" id="Path-151" stroke="#000000" stroke-width="2"></line>
+                <line x1="82.768559" y1="144.078603" x2="99.1179039" y2="133.860262" id="Path-152" stroke="#000000" stroke-width="2"></line>
+                <line x1="70.5065502" y1="136.925764" x2="70.5065502" y2="115.467249" id="Path-153" stroke="#000000" stroke-width="2"></line>
+                <circle id="Oval" fill="#000000" cx="141.524017" cy="109.847162" r="2.55458515"></circle>
+                <circle id="Oval-Copy-6" fill="#000000" cx="141.524017" cy="62.8427948" r="2.55458515"></circle>
+                <circle id="Oval-Copy-7" fill="#000000" cx="113.934498" cy="11.7510917" r="2.55458515"></circle>
+                <line x1="45.9825328" y1="23.5021834" x2="27.5895197" y2="13.2838428" id="Path-154" stroke="#000000" stroke-width="2"></line>
+                <line x1="45.9825328" y1="37.8078603" x2="27.5895197" y2="48.0262009" id="Path-155" stroke="#000000" stroke-width="2"></line>
+            </g>
+            <circle id="Oval" stroke="#000000" stroke-width="2" cx="117" cy="117" r="117"></circle>
+        </g>
+    </g>
+</svg>
