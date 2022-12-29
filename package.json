@@ -12,13 +12,13 @@
   },
   "dependencies": {
     "@astrojs/sitemap": "^1.0.0",
-    "astro": "^1.6.0",
+    "astro": "^1.8.0",
     "autoprefixer": "^10.4.13",
-    "cssnano": "^5.1.13",
-    "swiper": "^8.4.4"
+    "cssnano": "^5.1.14",
+    "swiper": "^8.4.5"
   },
   "devDependencies": {
-    "postcss": "^8.2.15",
-    "sass": "^1.55.0"
+    "postcss": "^8.4.20",
+    "sass": "^1.57.1"
   }
 }
