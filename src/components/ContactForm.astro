@@ -67,7 +67,15 @@
     <button type="submit">Submit Request</button>
   </div>
 </form>
+
 <script>
+  import {
+    BodyContentType,
+    Configuration,
+    EmailsApi,
+    EmailMessageData,
+  } from "@elasticemail/elasticemail-client-ts-axios";
+
   (function () {
     let forms = document.querySelectorAll(".email-form");
     forms.forEach((e: Element) => {
@@ -88,29 +96,61 @@
           thisForm.querySelector(".sent-message")!.classList.remove("d-block");
 
           let formData = new FormData(thisForm);
-          console.log(formData);
-          fetch(action, {
-            method: "POST",
-            body: formData,
-            headers: { "X-Requested-With": "XMLHttpRequest" },
-          })
-            .then((response) => {
-              if (response.ok) {
-                return response.text();
-              } else {
-                throw new Error(
-                  `${response.status} ${response.statusText} ${response.url}`
-                );
-              }
-            })
-            .then((data) => {
-              thisForm.querySelector(".loading")!.classList.remove("d-block");
-              thisForm.querySelector(".sent-message")!.classList.add("d-block");
-              thisForm.reset();
-            })
-            .catch((error) => {
-              displayError(thisForm, error);
-            });
+          let name = formData.get("name");
+          let email = formData.get("email");
+
+          var msg = "";
+          msg += "Name: " + name + "\n\r";
+          msg += "Email: " + email + "\n\r";
+          msg += "Phone: " + formData.get("phone") + "\n\r";
+          msg += "Address: " + formData.get("address") + "\n\r";
+          msg += "Additional Details: " + formData.get("message") + "\n\r";
+
+          const config = new Configuration({
+            apiKey: import.meta.env.SITE_KEY,
+          });
+
+          const emailsApi = new EmailsApi(config);
+
+          const emailMessageData = {
+            Recipients: [
+              {
+                Email: email ? email.toString() : "",
+                Fields: {
+                  name: name ? name.toString() : "",
+                },
+              },
+            ],
+            Content: {
+              Body: [
+                {
+                  ContentType: "PlainText" as BodyContentType,
+                  Content: msg,
+                  Charset: "utf-8",
+                },
+              ],
+              From: "bijiasuo2006@hotmail.com",
+              Subject: `Message from ${name} (${email})`,
+            },
+          };
+
+          const sendBulkEmails = (emailMessageData: EmailMessageData): void => {
+            emailsApi
+              .emailsPost(emailMessageData)
+              .then((response) => {
+                thisForm.querySelector(".loading")!.classList.remove("d-block");
+                thisForm
+                  .querySelector(".sent-message")!
+                  .classList.add("d-block");
+                thisForm.reset();
+                console.log(response.data);
+              })
+              .catch((error) => {
+                displayError(thisForm, error);
+              });
+          };
+
+          sendBulkEmails(emailMessageData);
         }
       );
     });
